@@ -7,7 +7,7 @@
         <meta name="author" content="" />
         <title>HHN Reviews - Home Page</title>
         <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="assets/pumpkin.ico" />
         <!-- Bootstrap icons-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
@@ -17,14 +17,17 @@
     </head>
     <body>
         <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Halloween Horror Nights Reviews</a>
+                <a class="navbar-brand" href="#!">
+                    <img src="assets/pumpkin.png" alt="HHN Logo" class="navbar-logo">
+                    Halloween Horror Nights Reviews
+                </a>                
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Reviews</a></li>
-                        <li class="nav-item"><a class="nav-link" href="food.html">Food Review</a></li>
+                        <li class="nav-item"><a class="nav-link" href="review.html">Food Review</a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -45,50 +48,25 @@
                 </div>
             </div>
         </nav>
-    <!-- Theme Toggle Section -->
-<section class="py-3 bg-light">
-    <div class="container px-4 px-lg-5">
-        <div class="row justify-content-center">
-            <div class="col-auto">
-                <label for="theme" class="theme">
-                    <span>Hollywood</span>
-                    <span class="theme__toggle-wrap">
-                        <input id="theme" class="theme__toggle" type="checkbox" role="switch" name="theme" value="dark">
-                        <span class="theme__fill"></span>
-                        <span class="theme__icon">
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                            <span class="theme__icon-part"></span>
-                        </span>
-                    </span>
-                    <span>Orlando</span>
-                </label>
-            </div>
-        </div>
-    </div>
-</section>
-        <!-- Maze 1 section-->
-        <section class="py-1">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6">
-                        <div class="card custom-card">
-                            <img class="card-img-top rounded-image" src="assets/texas.jpg" alt="..." />
-                        </div>
-                    </div>                    
-                    <div class="col-md-6">
-                        <div class="location-info">
-                            <div class="small mb-1">Universal Studios Hollywood, CA</div>
-                        </div>                        
-                        <h3>The Texas Chainsaw Massacre: The Legacy of Leatherface</h3>
 
-                        <div class="d-flex">
+<!-- Maze 1 section-->
+<section class="py-1 maze-section">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-6">
+                <div class="card custom-card">
+                    <img class="card-img-top rounded-image" src="assets/texas.jpg" alt="..." />
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="location-info">
+                    <div class="small mb-1">Universal Studios Hollywood, CA</div>
+                </div>
+                <h3>The Texas Chainsaw Massacre: The Legacy of Leatherface</h3>
+                <div class="rating-section">
+                    <div class="rate-container">
+                        <div class="rating-wrapper">
+                            <div class="average-rating">4.2</div>
                             <div class="rate">
                                 <input type="radio" id="pumpkin5" name="rate" value="5" />
                                 <label for="pumpkin5" title="text">5 pumpkins</label>
@@ -101,21 +79,25 @@
                                 <input type="radio" id="pumpkin1" name="rate" value="1" />
                                 <label for="pumpkin1" title="text">1 pumpkin</label>
                             </div>
-                            <p class="reviews-number">Reviews: 5</p>
-
                         </div>
+                    </div>
+                    <p class="reviews-number mt-2 mb-2">Reviews: 5</p>
+                    <div class="text-center">
+                        <button class="btn btn-primary review-button">Write a Review</button>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
         <hr class="section-divider">
 
 
                 <!-- Maze 2 section-->
 
-        <section class="py-1">
-            <div class="container px-4 px-lg-5 my-5">
+                <section class="py-1 maze-section">
+                    <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
                         <div class="card custom-card">
@@ -142,6 +124,8 @@
                                 <input type="radio" id="pumpkin1" name="rate" value="1" />
                                 <label for="pumpkin1" title="text">1 pumpkin</label>
                             </div>
+                            <p class="reviews-number me-3 mb-0">Reviews: 5</p>
+
                         </div>
 
                     </div>
@@ -154,7 +138,7 @@
 
         <!-- Maze 3 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -193,7 +177,7 @@
 
         <!-- Maze 4 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -232,7 +216,7 @@
 
         <!-- Maze 5 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -271,7 +255,7 @@
 
         <!-- Maze 6 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -310,7 +294,7 @@
 
         <!-- Maze 7 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -350,7 +334,7 @@
 
         <!-- Maze 8 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -389,7 +373,7 @@
 
         <!-- Maze 9 section-->
 
-        <section class="py-1">
+        <section class="py-1 maze-section">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6">
@@ -420,6 +404,29 @@
                         </div>
 
                     </div>
+<!-- Review Popup -->
+<div id="reviewPopup" class="review-popup" style="display: none;">
+    <div class="review-popup-content">
+      <h2>Write Your Review</h2>
+      <div class="popup-rating">
+        <div class="rate">
+          <input type="radio" id="popup_pumpkin5" name="popup_rate" value="5" />
+          <label for="popup_pumpkin5" title="text">5 pumpkins</label>
+          <input type="radio" id="popup_pumpkin4" name="popup_rate" value="4" />
+          <label for="popup_pumpkin4" title="text">4 pumpkins</label>
+          <input type="radio" id="popup_pumpkin3" name="popup_rate" value="3" />
+          <label for="popup_pumpkin3" title="text">3 pumpkins</label>
+          <input type="radio" id="popup_pumpkin2" name="popup_rate" value="2" />
+          <label for="popup_pumpkin2" title="text">2 pumpkins</label>
+          <input type="radio" id="popup_pumpkin1" name="popup_rate" value="1" />
+          <label for="popup_pumpkin1" title="text">1 pumpkin</label>
+        </div>
+      </div>
+      <textarea id="reviewText" rows="4" placeholder="Write your review here..."></textarea>
+      <button id="submitReview" class="btn btn-primary review-button">Submit Review</button>
+      <button id="closePopup" class="btn btn-secondary">Close</button>
+    </div>
+  </div>
                 </div>
             </div>
         </section>
@@ -433,5 +440,70 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+
+        <script>
+document.addEventListener('DOMContentLoaded', function() {
+  const reviewButtons = document.querySelectorAll('.review-button');
+  const popup = document.getElementById('reviewPopup');
+  const closePopup = document.getElementById('closePopup');
+  const submitReview = document.getElementById('submitReview');
+  const ratingInputs = document.querySelectorAll('.review-popup-content .rate input');
+
+  reviewButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      popup.style.display = 'flex';
+      resetPumpkins();
+    });
+  });
+
+  closePopup.addEventListener('click', () => {
+    popup.style.display = 'none';
+    resetPopup();
+  });
+
+  ratingInputs.forEach(input => {
+    input.addEventListener('change', () => {
+      updatePumpkins(input.value);
+    });
+  });
+
+  submitReview.addEventListener('click', () => {
+    const rating = document.querySelector('.review-popup-content .rate input:checked');
+    const reviewText = document.getElementById('reviewText').value;
+    if (rating) {
+      console.log('Rating:', rating.value, 'Review:', reviewText);
+      // Here you would typically send this data to your server
+      popup.style.display = 'none';
+      resetPopup();
+    } else {
+      alert('Please select a rating before submitting.');
+    }
+  });
+
+  function updatePumpkins(rating) {
+    ratingInputs.forEach(input => {
+      if (input.value <= rating) {
+        input.nextElementSibling.style.color = '#ff7518';
+      } else {
+        input.nextElementSibling.style.color = '#ccc';
+      }
+    });
+  }
+
+  function resetPumpkins() {
+    ratingInputs.forEach(input => {
+      input.nextElementSibling.style.color = '#ccc';
+    });
+  }
+
+  function resetPopup() {
+    ratingInputs.forEach(input => {
+      input.checked = false;
+    });
+    resetPumpkins();
+    document.getElementById('reviewText').value = '';
+  }
+});
+            </script>
     </body>
 </html>
