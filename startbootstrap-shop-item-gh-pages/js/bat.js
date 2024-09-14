@@ -33,7 +33,7 @@ window.onload = (event) => {
     // Remove bats after 3 seconds
     setTimeout(() => {
         removeBats();
-    }, 3000);
+    }, 2000);
 };
 
 function createBats() {
