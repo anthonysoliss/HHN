@@ -11711,3 +11711,91 @@ z-index: 11;
   color: green;
   cursor: pointer;
 }
+
+/* Static page */
+/* Add these rules at the top of your CSS file */
+html, body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Modify the existing .bat-container rule */
+.bat-container {
+  position: absolute;
+  display: flex;        
+  flex-direction: column;
+  top: 5%;
+  left: 30%;
+  width: 70%; /* Changed from 80% */
+  height: 30%;    
+  transform: translateZ(-1000px);
+  opacity: 1;
+}
+
+/* Modify the existing .bat-container-spiral rule */
+.bat-container-spiral {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 0;
+  left: 85%;
+  width: 10%;
+  height: 80%;         
+  opacity: 0.25;   
+  transform-style: preserve-3d;
+}
+
+/* Modify the existing .swirl rule */
+.swirl {
+  top: 30%;   
+  margin-left: -60%;      
+  transform: rotateZ(-60deg) translateZ(1200px);
+  opacity: 1; 
+  animation-name: swirl1;   
+  animation-duration: 8s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;   
+}
+
+/* Modify the existing .background-flyover rule */
+.background-flyover {
+  top: 0;
+  transform: rotateY(0deg) translateZ(-400px);
+  margin-top: -20%;
+  margin-left: -90%;
+  z-index: 1;
+  animation-name: background-flyover;
+  animation-duration: 12s;
+  animation-direction: normal;
+  animation-fill-mode: forwards;  
+}
+
+/* Modify the existing @keyframes for background-flyby */
+@keyframes background-flyby {
+  from {
+    margin-left: 100%; /* Changed from 150% */
+    transform: rotateY(-20deg) translateZ(-500px);
+    opacity: 1;
+  }
+  to {     
+    margin-left: -100%; /* Changed from -150% */
+    transform: rotateY(-20deg) translateZ(-500px);
+    opacity: 0.25;
+  }
+}
+
+/* Modify the existing @keyframes for foreground-flyby */
+@keyframes foreground-flyby {
+  from {
+    height: 200px;
+    transform: perspective(800px) rotateY(-180deg) scale(2) translateY(600px);
+    left: 85%;              
+  }
+  to {         
+    height: 200px;
+    transform: perspective(500px) rotateY(-180deg) scale(5) translateY(250px);
+    left: 0;
+    margin-left: -100%; /* Changed from -150% */
+  }
+}
