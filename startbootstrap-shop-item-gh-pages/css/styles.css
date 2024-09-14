@@ -11105,3 +11105,14 @@ body {
 		box-shadow: 0 0 0 0.125em var(--primary);
 	}
 }
+
+
+/* White line section */
+.section-divider {
+  border: 0;
+  height: 1px;
+  background-color: white;
+  margin: 2rem auto; /* Adjust the margin as needed */
+  width: 90%; /* Adjust the width as needed */
+  opacity: 0.5; /* Makes the line slightly transparent */
+}
