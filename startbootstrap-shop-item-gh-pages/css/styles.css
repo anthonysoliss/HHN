@@ -10920,10 +10920,12 @@ textarea.form-control-lg {
 html,
 body {
 	background-color: var(--bg);
+  font-family: 'GrindAndDeath', sans-serif;
+
 }
 body,
 input {
-	font: 1em/1.5 Fredoka, sans-serif;
+  font-family: 'GrindAndDeath', sans-serif;
 }
 body {
 	color: var(--fg);
@@ -11115,4 +11117,19 @@ body {
   margin: 2rem auto; /* Adjust the margin as needed */
   width: 90%; /* Adjust the width as needed */
   opacity: 0.5; /* Makes the line slightly transparent */
+}
+
+
+/* Reviews number */
+.reviews-number{
+  margin-top: 15px;
+}
+
+
+/* Font stuff */
+@font-face {
+  font-family: 'GrindAndDeath';
+  src: url('GrindAndDeath_Demo.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
